@@ -5,52 +5,50 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/loginTextView"
+        android:id="@+id/registerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="132dp"
         android:scaleX="2"
         android:scaleY="2"
-        android:text="Login:"
+        android:text="Register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/emailInput"
-        android:layout_width="336dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/emailRegInput"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="84dp"
         android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/registerTextView" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/passInput"
-        android:layout_width="336dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/passregInput"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
         android:hint="Password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+        app:layout_constraintTop_toBottomOf="@+id/emailRegInput" />
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/regBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="92dp"
+        android:text="Register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passInput"
-        app:layout_constraintVertical_bias="0.143" />
-
+        app:layout_constraintTop_toBottomOf="@+id/passregInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>
