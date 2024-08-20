@@ -7,4 +7,74 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/todoHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:text="To-Do List"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/titleInput"
+        android:layout_width="363dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="84dp"
+        android:background="#30949494"
+        android:hint="Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todoHeader" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/descInput"
+        android:layout_width="363dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="92dp"
+        android:background="#30949494"
+        android:hint="Description"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleInput" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/dateInput"
+        android:layout_width="363dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="92dp"
+        android:background="#30949494"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Due Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descInput" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateInput" />
+
+    <Button
+        android:id="@+id/viewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="View"
+        app:layout_constraintEnd_toStartOf="@+id/addBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateInput" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
