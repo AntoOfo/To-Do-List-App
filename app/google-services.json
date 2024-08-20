@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "420977171114",
+    "project_id": "to-do-list-login-register",
+    "storage_bucket": "to-do-list-login-register.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420977171114:android:af79696e9dd8ac91a24ed3",
+        "android_client_info": {
+          "package_name": "com.example.to_dolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdOcUad96BHduaywqC5PksdxjBaWjixa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
